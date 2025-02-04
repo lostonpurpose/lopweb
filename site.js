@@ -85,4 +85,3 @@ function contactForm() {
     allVideo.classList.add("hide-video");
     stopVideos();
 };
-
