@@ -18,6 +18,13 @@ h2 {
     width: 35%;
 }
 
+.me-photo {
+    width: 50%;
+    /* margin-left: 320px;
+    margin-top: 120px; */
+    opacity: 70%;
+}
+
 .container {
     display: flex;
 }
@@ -41,6 +48,15 @@ h2 {
 }
 
 .hide-video {
+    display: none;
+}
+
+.contact-form {
+    margin-top: 55px;
+    border: 2px solid black;
+}
+
+.hide-contact {
     display: none;
 }
 

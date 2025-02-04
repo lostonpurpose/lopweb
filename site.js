@@ -7,6 +7,8 @@ function homeList() {
     allSongs.classList.add("hide-songs");
     const allVideo = document.querySelector(".all-video");
     allVideo.classList.add("hide-video");
+    const showContact = document.querySelector(".contact-form")
+    showContact.classList.add("hide-contact")
 
     // menu.forEach((span, index) => {
     //     switch(index) {
@@ -35,6 +37,8 @@ function songList() {
     allSongs.classList.remove("hide-songs");
     const allVideo = document.querySelector(".all-video");
     allVideo.classList.add("hide-video")
+    const showContact = document.querySelector(".contact-form")
+    showContact.classList.add("hide-contact")
     // menu.forEach((span, index) => {
     //     switch(index) {
     //         case 1:
@@ -63,7 +67,19 @@ function videoList() {
     allVideo.classList.remove("hide-video");
     const allSongs = document.querySelector(".all-songs");
     allSongs.classList.add("hide-songs");
+    const showContact = document.querySelector(".contact-form")
+    showContact.classList.add("hide-contact")
 };
 
 const contact = document.querySelector("#contact");
 contact.addEventListener("click", contactForm);
+
+function contactForm() {
+    const showContact = document.querySelector(".contact-form")
+    showContact.classList.remove("hide-contact")
+    const menu = document.querySelectorAll(".main-menu a");
+    const allSongs = document.querySelector(".all-songs");
+    allSongs.classList.add("hide-songs");
+    const allVideo = document.querySelector(".all-video");
+    allVideo.classList.add("hide-video");
+};
