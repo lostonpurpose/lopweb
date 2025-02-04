@@ -148,6 +148,10 @@ a:hover {
         margin-top: 10px;
     }
 
+.social {
+    fill: #210266;
+}
+
     .main-menu {
         flex-direction: column; /* Stack menu items vertically */
         margin: 0px;
