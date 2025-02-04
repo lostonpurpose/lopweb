@@ -77,6 +77,9 @@ contact.addEventListener("click", contactForm);
 function contactForm() {
     const showContact = document.querySelector(".contact-form")
     showContact.classList.remove("hide-contact")
+    const bg = document.querySelector(".bg")
+    bg.classList.remove("hide-contact")
+
     const menu = document.querySelectorAll(".main-menu a");
     const allSongs = document.querySelector(".all-songs");
     allSongs.classList.add("hide-songs");
