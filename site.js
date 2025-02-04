@@ -47,25 +47,7 @@ function songList() {
     const showContact = document.querySelector(".contact-form");
     showContact.classList.add("hide-contact");
     
-    stopVideos();   
-    // menu.forEach((span, index) => {
-    //     switch(index) {
-    //         case 1:
-    //             span.innerHTML = "poop"
-    //             break;
-    //         case 2:
-    //             span.innerHTML = "head"
-    //             break;
-    //         case 3:
-    //             span.innerHTML = "mr"
-    //             break;
-    //         case 4:
-    //             span.innerHTML = "fart"
-    //             break;
-    //         case 5:
-    //             span.innerHTML = "fart"
-    //             break;
-    //     }
+    stopVideos();
     };
 
 const video = document.querySelector("#video");
