@@ -12,6 +12,9 @@
     <div class="container">
         <div class="left-side">
             <h2>Lost on Purpose</h2>
+            <h4 class="u1 hide-songs">| music |</h4>
+            <h4 class="u2 hide-video">video</h4>
+            <h4 class="u3 hide-contact">contact</h4>
             <div class="main-menu">
                 <span ><a id="home" href="#">home</a></span>
                 <span><a id="songs" href="#">music</a></span>
@@ -56,12 +59,34 @@
         <div class="contact-form hide-contact">
             <div class="bg hide-contact"></div>
             <h2>Contact</h2>
+            <span class="custom-blue"></span>
             <p>Press: lostonpurpose [] gmail.com</p>
             <p>Label: lostonpurpose [] gmail.com</p>
             <p>Booking: lostonpurpose [] gmail.com</p>
         </div>
         
     </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        let players = {}; // Store YouTube player instances
+    
+        function onYouTubeIframeAPIReady() {
+            document.querySelectorAll(".all-video iframe").forEach((iframe, index) => {
+                players[index] = new YT.Player(iframe, {
+                    events: {
+                        onReady: (event) => console.log(`YouTube Player ${index} ready`),
+                    }
+                });
+            });
+        }
+    
+        function stopVideos() {
+            document.querySelectorAll(".all-video iframe").forEach(iframe => {
+                iframe.src = iframe.src; // Reset the src to stop playback
+    });
+}
+    </script>
 <script src="site.js"></script>
 </body>
 </html>

@@ -8,14 +8,19 @@ body {
 
 h2 {
     color: rgb(33, 2, 102);
-    margin-left: 40px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
+h4 {
+    margin: 0px;
+    margin-top: 0px;
+
+}
+
+
 p {
     color: rgb(33, 2, 102);
-    margin-left: 40px;
     margin-bottom: 0px;
 }
 
@@ -23,6 +28,8 @@ p {
     display: flex;
     flex-direction: column;
     width: 35%;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
 .me-photo {
@@ -38,7 +45,7 @@ p {
 
 .all-songs {
     padding-left: 180px;
-    margin-top: 55px;
+    margin-top: 40px;
     opacity: 70%;
     width: 600px;
 }
@@ -49,7 +56,8 @@ p {
 
 .all-video {
     /* padding-left: 180px; */
-    margin-top: 55px;
+    margin-top: 40px;
+    opacity: 80%;
     /* margin-right: 300px; */
     /* width: 500px; */
 }
@@ -84,14 +92,14 @@ a:hover {
 .main-menu {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
     margin-top: 20px;
 }
 
 .contact-form {
     position: relative;
     z-index: 1;
-    margin-top: 25px;
+    margin-top: 45px;
+    margin-left: 55px;
     padding: 20px;
 }
 
@@ -106,6 +114,17 @@ a:hover {
     opacity: .4;
     width: 100%;
     height: 100%;
+}
+
+.custom-blue {
+    background-color: rgb(33, 2, 102);
+    width: 80%;
+    height: .125rem;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-top: 5px;
+    margin-left: 45px;
 }
 
 @media (max-width: 768px) {
