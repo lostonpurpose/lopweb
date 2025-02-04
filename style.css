@@ -42,6 +42,10 @@ p {
     display: flex;
 }
 
+.social-things {
+    margin-top: 20px;
+}
+
 .all-songs {
     padding-left: 180px;
     margin-top: 40px;
@@ -148,8 +152,8 @@ a:hover {
         margin-top: 10px;
     }
 
-.social {
-    fill: #210266;
+.social-things {
+    margin-top: 20px;
 }
 
     .main-menu {
