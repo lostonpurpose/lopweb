@@ -51,10 +51,10 @@ p {
 }
 
 .all-songs {
-    padding-left: 180px;
+    padding-left: 57px;
     margin-top: 40px;
     opacity: 75%;
-    width: 600px;
+    width: 900px;
     /* box-shadow: 4px 4px 15px 5px; */
 }
 
@@ -79,9 +79,10 @@ p {
 }
 
 a {
-    color: rgb(33, 2, 102);
+    color: rgb(148, 105, 242);
     text-decoration: none;
     cursor: pointer;
+
 }
 
 a:hover {
@@ -102,7 +103,7 @@ a:hover {
 .contact-form {
     position: relative;
     z-index: 1;
-    margin-top: 45px;
+    margin-top: 40px;
     margin-left: 55px;
     padding: 20px;
 }
@@ -146,7 +147,7 @@ a:hover {
     h4 {
         margin: 0px;
         margin-top: 0px;
-        color: rgb(33, 2, 102);
+        color: rgb(148, 105, 242);
     }
     
     .u1, .u2, .u3 {
@@ -193,17 +194,17 @@ a:hover {
     }
 
     .all-songs {
-        width: 90%; /* Music section should take full width */
+        width: 95%; /* Music section should take full width */
         margin-top: 40px;
-        margin-left: 20px;
+        margin-left: 35px;
         /* margin-right: 10px; */
         padding-left: 0px;
     }
 
     .all-video {
-        width: 100%; /* Video section should take full width */
+        
         margin-top: 40px;
-        margin-left: 20px;
+        margin-left: 30px;
         /* margin-right: 10px; */
         padding-left: 0px;
     }
@@ -238,5 +239,10 @@ a:hover {
         padding-right: 18px;
         margin-top: 5px;
         margin-left: 4px;
+    }
+
+    iframe {
+        max-width: 90%;
+        align-items: center;
     }
 }
