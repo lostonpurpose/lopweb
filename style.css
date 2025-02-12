@@ -7,7 +7,7 @@ body {
 }
 
 h2 {
-    color: rgb(33, 2, 102);
+    color: #300294;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -142,13 +142,13 @@ a:hover {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        min-height: 100vh   
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        width: 100vw; /* Ensures body doesn't overflow horizontally */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
         /* position: fixed; */
         /* background-position: 60%, 90%; */
-    }
-
-    body, html {
-        min-height: 100vh;
     }
 
     h4 {
@@ -164,7 +164,7 @@ a:hover {
     .container {
         flex-direction: column; /* Stack items vertically */
         align-items: center;
-        margin-left: 0px;
+        margin: 0px;
         max-width: fit-content;
     }
 
@@ -172,7 +172,7 @@ a:hover {
         width: 100%; /* Full width for smaller screens */
         /* text-align: center; */
         padding-left: 20px;
-        margin-left: 0px;
+        margin: 0px !important;
     }
 
     h2 {
@@ -180,6 +180,14 @@ a:hover {
         font-size: 42px;
         margin-bottom: 0px;
         margin-top: 10px;
+    }
+
+    .contact-form h2 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 24px;
     }
 
     .social-things {
@@ -221,7 +229,9 @@ a:hover {
         z-index: 1;
         margin-top: 45px;
         margin-left: 5px;
-        padding: 20px;
+        margin-right: 5px;
+        padding: 5px;
+        width: 90%;
     }
     
     .contact-form .bg {
@@ -233,7 +243,7 @@ a:hover {
         right: 0;
         background: white center center;
         opacity: .4;
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
 
