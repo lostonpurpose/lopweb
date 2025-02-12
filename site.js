@@ -14,6 +14,9 @@ function homeList() {
     document.querySelector(".u3").classList.add("hide-contact");
     stopVideos();
 
+    const allMenu = document.querySelector(".main-menu");
+    allMenu.classList.add("resize")
+
     // menu.forEach((span, index) => {
     //     switch(index) {
     //         case 1:
@@ -46,6 +49,9 @@ function songList() {
     allVideo.classList.add("hide-video");
     const showContact = document.querySelector(".contact-form");
     showContact.classList.add("hide-contact");
+
+    const allMenu = document.querySelector(".main-menu");
+    allMenu.classList.remove("resize")
     
     stopVideos();
     };
